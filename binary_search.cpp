@@ -11,6 +11,7 @@ int fun(int arr[],int low,int high,int target){
     else{
        return  fun(arr,mid+1,high,target);
     }
+    //recursion time compleexcity long 2 n...
 }
 int main(){
     int n;cin>>n;
