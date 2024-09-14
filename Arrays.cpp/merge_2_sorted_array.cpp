@@ -41,18 +41,6 @@ int main(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // merging two sorted array with the help of third element...
 // this code include extra space so will go for the optimal..
 // #include<bits/stdc++.h>

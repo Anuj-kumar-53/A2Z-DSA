@@ -67,7 +67,7 @@ int main(){
     insert(head,30);
     insert(head,40);
     insert(head,50);
-    int k;cout<<"tell the element u wnat delete before: ";
+    int k;cout<<"tell the element u wnat insert before: ";
     cin>>k;
     head = insertK_ele(head,k,1000);
     print(head);

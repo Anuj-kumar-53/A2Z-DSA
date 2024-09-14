@@ -110,9 +110,10 @@ int main(){
     node* head = insert_ele(arr);
     // head = removeHead(head);
     // head = removeTail(head);
-    // int k;cout<<"enter the index u want to delete: ";
-    // cin>>k;
-    // head = removeK_ele(head,k);
+    int k;cout<<"enter the index u want to delete: ";
+    cin>>k;
+    head = removeK_ele(head,k);
+    print(head);
   remove_THE_node(head->next->next->back);
     print(head);
     return 0;

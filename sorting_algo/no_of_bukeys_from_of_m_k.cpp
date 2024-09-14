@@ -1,3 +1,5 @@
+//here m is the no bukey to be form
+//k is the no of consecutive element that is required to form one bukey..
 #include<bits/stdc++.h>
 using namespace std;
 int ispossible(int arr[],int n,int m,int k,int day){

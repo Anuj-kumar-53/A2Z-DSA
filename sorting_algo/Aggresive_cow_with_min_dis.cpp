@@ -7,7 +7,8 @@ bool canweplace(int arr[],int n,int distance,int cows){
     for(int i=0;i<n;i++){
         if(arr[i]-last>= distance){
             placedcow++;
-            last = arr[i];
+            last = arr[i]; 
+            if(placedcow == cows) return true;
         }
     }
     return placedcow>=cows;
@@ -20,7 +21,7 @@ cout<<"enter the array in sorted form";
 for(int i=0;i<n;i++){
     cin>>arr[i];
 }
-int low = arr[0],high = arr[n-1] - arr[0];
+int low = 1,high = arr[n-1] - arr[0];
 int cows;
 cout<<"enter how many cows u want to place..";
 cin>>cows;
