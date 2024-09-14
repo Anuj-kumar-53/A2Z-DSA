@@ -17,7 +17,7 @@ class node{
     node(int d){
         data = d;
         next = nullptr;
-    }
+    } 
 };
 node* insert(node* head,int val){
     node* newE = new node(val);
