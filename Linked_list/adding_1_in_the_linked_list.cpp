@@ -9,9 +9,9 @@ class node{
     public:
     int data;
     node* next;
-    node(int d,node* val){
+    node(int d,node* va){
         data = d;
-        next = val;
+        next = va;
     }
     public:
     node(int d){
