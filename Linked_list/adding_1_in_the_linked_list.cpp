@@ -16,7 +16,7 @@ class node{
     public:
     node(int d){
         data = d;
-        next = nullptr;
+        next = nullptr; 
     } 
 };
 node* insert(node* head,int val){
