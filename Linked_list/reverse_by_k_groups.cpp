@@ -1,4 +1,5 @@
 //reversing the elements by k groups..
+// important..
 #include<bits/stdc++.h>
 #include<memory>
 using namespace std;
@@ -41,7 +42,17 @@ node* findKnodes(node* temp,int k){
     }
     return temp;
 }
-node* reverseLinkedList(node* temp){
+void reverseLinkedList(node*& temp){
+    if(temp == nullptr || temp->next == nullptr) return ;
+    node* current = temp;
+    node* previous = nullptr;
+    while(current){
+        node* hold = current->next;
+        current->next = previous;
+        previous = current;
+        current = hold;
+    }
+    
 
 }
 node* findingTheElements(node* head,int k){
@@ -56,7 +67,7 @@ node* findingTheElements(node* head,int k){
         }
         nextnod = knode->next;
         knode->next = nullptr; // here we formed the k group elements
-       temp = reverseLinkedList(temp);
+       reverseLinkedList(temp);
         if(head == temp) head = knode;
         else pre->next = knode;
         pre = temp;
@@ -73,10 +84,11 @@ int main(){
         head = insert(head,val);
     }
 /// the algorith to reverse the element by k nodes imp...
-int k;cout<<"enetr the group of how much elements u want to reverse at once";
-cin>>k;
-head = findingTheElements(head,k);
+    int k;cout<<"enetr the group of how much elements u want to reverse at once: ";
+    cin>>k;
+    head = findingTheElements(head,k);
    
 
   print(head);
+
 }
